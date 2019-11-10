@@ -5,6 +5,7 @@ install:
   - pip install -r requirements/main.txt
   - pip install -r requirements/test.txt
   - pip install .
+  - pip freeze
 
 script:
    - pytest tests
