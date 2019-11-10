@@ -1,6 +1,6 @@
 import pytest
 
-from arrays_and_strings.one_away import one_away
+from coding_interview.arrays_and_strings.one_away import one_away
 
 
 @pytest.mark.parametrize("word_a, word_b,expected", [('pale', 'ple', True),

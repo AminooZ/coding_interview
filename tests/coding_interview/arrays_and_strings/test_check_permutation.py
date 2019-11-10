@@ -1,7 +1,7 @@
 import pytest
 
-from arrays_and_strings.check_permutation import check_permutation_first_attempt, \
-    check_permutation_second_attempt
+from coding_interview.arrays_and_strings.check_permutation import \
+    check_permutation_first_attempt, check_permutation_second_attempt
 
 
 @pytest.mark.parametrize("left,right,expected",

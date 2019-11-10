@@ -1,7 +1,7 @@
 # Exercise 1.2:
 # Given two strings, write a method to decide if one is a permutation of the other.
 
-from utils import SuperDict
+from coding_interview.utils import SuperDict
 
 
 def check_permutation_first_attempt(left, right):

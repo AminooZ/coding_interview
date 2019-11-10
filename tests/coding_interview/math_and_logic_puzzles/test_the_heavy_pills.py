@@ -1,6 +1,7 @@
 import pytest
 
-from math_and_logic_puzzles.the_heavy_pill import set_heavy_pill, the_heavy_pill
+from coding_interview.math_and_logic_puzzles.the_heavy_pill import set_heavy_pill, \
+    the_heavy_pill
 
 
 @pytest.mark.parametrize("heavy_pill", [x for x in range(1, 21)])

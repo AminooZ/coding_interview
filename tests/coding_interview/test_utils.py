@@ -1,6 +1,6 @@
 import pytest
 
-from utils import SuperDict
+from coding_interview.utils import SuperDict
 
 
 def test_super_dict_init():

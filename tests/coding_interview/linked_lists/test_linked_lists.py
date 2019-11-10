@@ -1,6 +1,6 @@
 import pytest
 
-from linked_lists.linked_lists import LinkedList, Node
+from coding_interview.linked_lists.linked_lists import LinkedList, Node
 
 
 def assert_node_equality(node1, node2):

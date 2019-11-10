@@ -1,8 +1,9 @@
 import pytest
 
-from linked_lists.linked_lists import LinkedList
-from linked_lists.remove_dups import remove_duplicates
-from tests.linked_lists.test_linked_lists import assert_linked_list_equality
+from coding_interview.linked_lists.linked_lists import LinkedList
+from coding_interview.linked_lists.remove_dups import remove_duplicates
+from tests.coding_interview.linked_lists.test_linked_lists import \
+    assert_linked_list_equality
 
 
 @pytest.mark.parametrize("linked_list,expected", [

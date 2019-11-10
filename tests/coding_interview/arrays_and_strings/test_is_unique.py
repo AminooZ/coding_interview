@@ -1,6 +1,6 @@
 import pytest
 
-from arrays_and_strings.is_unique import is_unique_first_attempt, \
+from coding_interview.arrays_and_strings.is_unique import is_unique_first_attempt, \
     is_unique_second_attempt, is_unique_third_attempt
 
 

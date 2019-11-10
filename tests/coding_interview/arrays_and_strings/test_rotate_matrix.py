@@ -1,6 +1,7 @@
 import pytest
 
-from arrays_and_strings.rotate_matrix import rotate_index, rotate_matrix
+from coding_interview.arrays_and_strings.rotate_matrix import rotate_index, \
+    rotate_matrix
 
 
 @pytest.mark.parametrize("abscissa,ordinate,size,expected", [

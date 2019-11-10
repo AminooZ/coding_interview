@@ -1,6 +1,6 @@
 import pytest
 
-from arrays_and_strings.palindrome_permutation import \
+from coding_interview.arrays_and_strings.palindrome_permutation import \
     palindrome_permutation_first_attempt, palindrome_permutation_second_attempt
 
 

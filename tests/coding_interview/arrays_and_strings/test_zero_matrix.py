@@ -1,6 +1,6 @@
 import pytest
 
-from arrays_and_strings.zero_matrix import zero_matrix
+from coding_interview.arrays_and_strings.zero_matrix import zero_matrix
 
 
 @pytest.mark.parametrize("matrix,expected", [

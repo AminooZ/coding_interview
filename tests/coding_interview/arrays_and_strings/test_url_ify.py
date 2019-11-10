@@ -1,6 +1,6 @@
 import pytest
 
-from arrays_and_strings.url_ify import count_spaces, url_ify
+from coding_interview.arrays_and_strings.url_ify import count_spaces, url_ify
 
 
 @pytest.mark.parametrize("sentence,length,output", [
