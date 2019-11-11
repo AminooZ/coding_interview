@@ -8,4 +8,4 @@ install:
   - pip freeze
 
 script:
-   - pytest tests
+  - pytest tests
