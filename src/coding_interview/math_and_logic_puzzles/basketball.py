@@ -14,6 +14,7 @@ def combination(n, k):
 
 
 def basketball(n, k, p):
+    # #combinations * number of cases where we score k or more shots out of n
     p_game_2 = 0
     for i in range(k, n + 1):
         p_game_2 += combination(n, i) * p ** i * (1 - p) ** (n - i)
