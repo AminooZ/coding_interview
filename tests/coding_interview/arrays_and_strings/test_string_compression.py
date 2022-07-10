@@ -1,6 +1,6 @@
 import pytest
 
-from coding_interview.arrays_and_strings import string_compression
+from coding_interview.arrays_and_strings.string_compression import string_compression
 
 
 @pytest.mark.parametrize("word,expected", [
