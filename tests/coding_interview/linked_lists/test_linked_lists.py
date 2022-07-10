@@ -61,3 +61,10 @@ class TestLinkedList:
     def test_delete(self, linked_list, value, expected):
         linked_list.delete(value=value)
         assert_linked_list_equality(linked_list, expected)
+
+    @pytest.mark.parametrize("values", [
+        [0],
+        [0, 1, 2, 3, 4, 5]
+    ])
+    def test_to_list(self, values):
+        assert LinkedList.from_list(values=values).to_list() == values

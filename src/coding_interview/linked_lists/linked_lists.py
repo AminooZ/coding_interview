@@ -46,3 +46,11 @@ class LinkedList:
             print(node.value)
             node = node.next
         print(node.value)
+
+    def to_list(self):
+        node = self.head
+        values = [node.value]
+        while node.next:
+            values.append(node.next.value)
+            node = node.next
+        return values
