@@ -4,16 +4,21 @@ from coding_interview.linked_lists.linked_lists import LinkedList, Node
 
 
 def assert_node_equality(node1, node2):
-    while node1.next and node2.next:
-        return node1.value == node2.value and assert_node_equality(
-            node1=node1.next,
-            node2=node2.next
-        )
-    return node1.value == node2.value
+    if node1 is None and node2 is None:
+        return True
+    elif node1 is None or node2 is None:
+        return False
+    else:
+        while node1.next and node2.next:
+            return node1.value == node2.value and assert_node_equality(
+                node1=node1.next,
+                node2=node2.next
+            )
+        return node1.value == node2.value
 
 
 def assert_linked_list_equality(linked_list1, linked_list2):
-    return assert_node_equality(node1=linked_list1.head, node2=linked_list2.head)
+    assert assert_node_equality(node1=linked_list1.head, node2=linked_list2.head)
 
 
 class TestNode:
@@ -26,7 +31,7 @@ class TestNode:
     @pytest.mark.parametrize("next", [Node(value=x) for x in range(5)])
     def test_next_init(self, next):
         node = Node(next=next)
-        assert_node_equality(node.next, next)
+        assert assert_node_equality(node.next, next)
 
 
 class TestLinkedList:
